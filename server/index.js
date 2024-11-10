@@ -77,6 +77,11 @@ app.delete("/api/DeleteBlogById/:id", BlogController.DeleteBlog);
 
 // for front end
 // only post and get for registration
+app.get("/", (req, res) => {
+  res.send("Welcome to the Bluink360 Homepage!");
+});
+
+
 
 app.post("/api/Registraion", RegisterationController.PostUser);
 
