@@ -85,6 +85,6 @@ app.get("/api/AllUsers", RegisterationController.GetAllUsers);
 app.delete("/api/DeleteUserId/:id", RegisterationController.DeleteRegUser);
 
 // staring the app
-app.listen(Port, "127.0.0.1", () => {
+app.listen(Port, "0.0.0.0", () => {
   console.log("Server Started At " + Port);
 });
